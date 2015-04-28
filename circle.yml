@@ -3,9 +3,9 @@ machine:
     - docker
 dependencies:
   override:
-    - docker pull keyuan/bitphyloR-docker 
+    - docker pull keyuan/bitphylor-docker 
 
 
 test:
   override:
-    - docker run -ti keyuan/bitphyloR-docker R --version 
+    - docker run -ti keyuan/bitphylor-docker R --version 
