@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+dependencies:
+  override:
+    - docker pull keyuan/bitphyloR-docker 
+
+
+test:
+  override:
+    - docker run -ti keyuan/bitphyloR-docker R --version 
